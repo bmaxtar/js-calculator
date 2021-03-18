@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+    --white:#fff;
+    --black: #272B33; 
+    --gray: #292D36;
+    --green: #46f3d1;
+    --red: #9f4f52;
+}
+body {
+  background: var(--white);
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  background: var(--black);
+  width: 320px;
+  height: 550px;
+  border-radius: .5em;
+  box-shadow: 6px 6px 13px 0 rgba(0,0,2,.3);
+  margin: 0 auto;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.container .result {
+  color: var(--white);  
+  width: 100%;
+  height: 150px;
+}
+.container .result p {
+  font-size: 45pt;
+  overflow-y: auto;
+  text-align: right;
+
+}
+
+.container .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  color: #fff;
+}
+.container .buttons .button, .container .buttons .num-button  {
+  cursor: grab;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  box-shadow: 3px 3px 8px 0 var(--gray)
+}
+
+.container .buttons .zero {
+  grid-column: 1/ 3;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow:  1px 1px 3px 1px rgb(70, 243, 209),
+  -1px -1px 3px 1px rgb(70, 243, 209);
+}
+.action-btn {
+  color: var(--green);
+  font-weight: bold;
+}
+.calc-action-btn{
+  color: yellow;
+  font-weight: bold;
+}
